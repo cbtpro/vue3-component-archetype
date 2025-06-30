@@ -1,4 +1,6 @@
-# vue3-component-library-archetype
+# vue3-component-archetype
+
+> forked from HeroCloudy/vue3-component-library-archetype
 
 基于 Vue3 + Vite 独立组件库脚手架，可在此基础上定制化开发企业级或个人的组件库。
 
@@ -24,7 +26,7 @@
 #### 克隆代码到本地：
 
 ```shell
-git clone git@github.com:HeroCloudy/vue3-component-library-archetype.git
+git clone git@github.com:cbtpro/vue3-component-archetype.git
 ```
 
 #### 安装依赖
@@ -185,18 +187,24 @@ pnpm run pub:local
 
 发布组件库到本地私服。
 
+### 修改个性配置
 
----
-***程序员优雅哥***
+- 修改config.ts
 
-十年程序员，呆过央企外企私企，做过前端后端架构，分享vue、Java等前后端技术和架构
+```ts
+export const config = {
+  componentNamePrefix: '个性化前缀' // 修改成个性化的前缀
+}
+```
 
-在公众号上随时更新前后端技术文章及企业级实战项目。可关注公众号程序员优雅哥查看。
+- 修改cli/src/config.ts
 
-与时间赛跑，每天都在进步！！
+```ts
+export const Config = {
+  /** 组件名的前缀 */
+  COMPONENT_PREFIX: '个性化前缀', // 修改成个性化前缀
+  /** 组件库名称 */
+  COMPONENT_LIB_NAME: '组件库名称' // 修改成自己的组件库名称
+}
 
-If you have any questions, please contact me (heroyyg@126.com).
-
-<img src="https://tva1.sinaimg.cn/large/e6c9d24egy1h5anivz6cmj20ca0c6dgm.jpg" alt="程序员优雅哥" style="width: 200px;" />
-
-yycoder
+```

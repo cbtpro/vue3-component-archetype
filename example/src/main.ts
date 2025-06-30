@@ -5,8 +5,8 @@ import ElementPlus from 'element-plus'
 import 'element-plus/dist/index.css'
 import DemoUiLib from '@demo-ui-lib/demo-ui-lib'
 
-const env = import.meta.env
-console.log(env)
+// const env = import.meta.env
+// console.log(env)
 
 const app = createApp(App)
 app.use(ElementPlus)

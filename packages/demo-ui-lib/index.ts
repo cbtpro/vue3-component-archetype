@@ -1,10 +1,12 @@
 import { App } from 'vue'
 import Foo from '@demo-ui-lib/foo'
+import DropdownMenu from '../dropdown-menu'
 // import component end
 import '../scss/index.scss'
 
 const components = [
-  Foo
+  Foo,
+  DropdownMenu
 ] // components
 
 // 全局动态添加组件

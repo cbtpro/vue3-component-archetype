@@ -9,9 +9,9 @@
   "license": "ISC",
   "devDependencies": {
     "@types/inquirer": "8.2.5",
-    "@types/shelljs": "^0.8.11",
+    "@types/shelljs": "^0.8.12",
     "chalk": "4.1.2",
-    "commander": "^9.4.1",
+    "commander": "^9.5.0",
     "inquirer": "8.2.5",
     "log-symbols": "4.1.0",
     "ora": "5.4.1",
@@ -19,6 +19,6 @@
     "ts-node": "^10.9.1"
   },
   "dependencies": {
-    "@types/node": "^18.11.7"
+    "@types/node": "^18.16.16"
   }
 }
